@@ -10,14 +10,25 @@ export default function RegisterPage() {
     const [password, setPassword] = useState('');
 
 
-    function registerUser(ev)
+    async function registerUser(ev)
     {
         ev.preventDefault();
-        axios.post('/register',{
-            name,
-            email,
-            password,
-        })
+
+        try{
+            await axios.post('/register',{
+                name,
+                email,
+                password,
+            });
+
+
+            alert('User registered successfully.Now you can log in');
+        }
+        catch(err)
+        {
+            console.error(err);
+            alert('user already exist with same email');
+        }
 
     }
 
