@@ -16,7 +16,6 @@ export function UserContextProvider({ children }) {
             {
                 setUser(data);
             });
-            console.log("\nafter refrest",data);
         }
     }, []);
 
