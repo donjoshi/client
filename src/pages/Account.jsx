@@ -17,8 +17,6 @@ export default function AccountPage() {
         subpage = 'profile';
     }
 
-    console.log(subpage);
-
     async function logout() {
 
         await axios.post('/logout');
