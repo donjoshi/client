@@ -136,7 +136,7 @@ export default function PlacesPage() {
                         {preInput('Perks','Select all the perks of your place')}
                        
                         
-                        <div className='grid mt-2 gap-2 grid-cols-2 md:grid-cols-3 lg:grid-xols-6'>
+                        <div className='grid mt-2 gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-6'>
                             
                             <Perks selected={perks} onChange={setPerks} />
 
