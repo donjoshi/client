@@ -4,8 +4,7 @@ export default function Perks({ selected, onChange }) {
 
 
     function handleCbClick(name) {
-        alert(name);
-        
+        alert(name);        
     }
 
     return (
