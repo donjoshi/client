@@ -128,8 +128,7 @@ export default function PlacesPage() {
                                 Upload
                             </label>
 
-                        </div>
-                        
+                        </div>                        
 
                         
                         {preInput('Description','description of the place')}
